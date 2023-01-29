@@ -1,0 +1,25 @@
+sudo apt install openssl apache2
+
+sudo a2enmod ssl
+
+
+sudo systemctl restart apache2
+
+sudo a2ensite default-ss
+
+sudo systemctl reload apache2
+
+sudo mkdir /etc/apache2/ssl
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/a$
+
+sudo nano /etc/apache2/sites-available/default-ssl.conf
+
+sudo systemctl restart apache2
+
+
+#ServerName  192.168.80.129:443
+
+# SSLCertificateFile      /etc/apache2/ssl/apache.crt
+# SSLCertificateKeyFile /etc/apache2/ssl/apache.key
+
