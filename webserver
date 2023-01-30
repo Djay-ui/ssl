@@ -1,0 +1,26 @@
+ 1  sudo apt update
+    2  sudo apt install apache2
+    3  sudo mkdir /etc/apache2/ssl
+    4* sudo apt install apach
+    5  sudo nano /etc/vsftpd.conf
+    6  sudo systemctl restart vsftpd
+    7  ss ant
+    8  ss -ant
+    9  sudo nano /etc/vsftpd.conf
+   10  ls
+   11  sudo cp * /etc/apache2/ssl/
+   12  sudo chmod 755 /etc/apache2/ssl/*
+   13  sudo chmod 755 /etc/apache2/ssl
+   14  ls -l  /etc/apache2/ssl
+   15  sudo a2enmod ssl
+   16  sudo a2ensite default-ssl
+   17  sudo nano /etc/apache2/sites-available/default-ssl.conf
+   18  apache2
+   19  sudo systemctl reload apache2
+   20  sudo systemctl restart  apache2
+   21  sudo systemctl status  apache2
+   22  history
+
+
+
+D:\djay>scp webserver.pem shuhari@192.168.80.129:/home/shuhari/
